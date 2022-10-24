@@ -7,16 +7,98 @@
     <title>Miku: Live and Song</title>
   </head>
   <body>
-    <a herf="index.html">Miku</a>
+    <header>
+      <h1>Miku: Live Video and Song</h1>
+    </header>
 
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/nbFxHdszYvA"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+    <nav>
+      <a href="index.html">Home Page</a>
+    </nav>
+
+    <main>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/nbFxHdszYvA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+
+      <br />
+
+      <form name="Miku introduction: suggests" id="Miku" method="get">
+        <br />
+        <br />
+        <!-- 
+       This is a textarea input. allows a user to enter multiple lines of information for a form.
+       name and id are required attributes.
+     -->
+        <p>
+          if your comments are adopted, you will receive a note by your email!
+        </p>
+
+        <br />
+
+        <p>
+          (if you don't want to receive the note, there will be no need to enter
+          your email)
+        </p>
+        <br />
+        <br />
+
+        <label for="comments">Comments For This Website</label>
+        <br />
+        <textarea
+          name="Comments For This Website"
+          id="comments"
+          rows="10"
+          cols="50"></textarea>
+        <br />
+        <br />
+
+        <label for="email-address">Please Enter Your E-mail Address:</label>
+        <input
+          type="email"
+          name="email"
+          id="email-address"
+          minlength="6"
+          maxlength="40" />
+        -->
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- 
+       reset button input. type="reset", name and id are all required.
+       value is an optional attribute for if you want to change the default text on the button.
+     -->
+        <input
+          type="reset"
+          name="clearForm"
+          id="clear"
+          value="Click This to Clear All Inputs" />
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- 
+       The submit button input. Note: This input has to be inside the form tag.
+       type="submit", name, and id are all required. value is optional for the same reason as reset.
+     -->
+        <input
+          type="submit"
+          name="submitButton"
+          id="submit"
+          value="Click This to Submit Your Suggestion" />
+        <br />
+        <br />
+      </form>
+    </main>
   </body>
 </html>
